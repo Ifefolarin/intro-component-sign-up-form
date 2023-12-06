@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(../images/bg-intro-desktop.png);
+
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+
+  height: 100dvh;
+  width: 100dwh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-details {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 1.8rem;
+}
+
+.text {
+  width: 33rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0em;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.form {
+  width: inherit;
+}
+
+.form-text {
+  background-color: hsl(248, 32%, 49%);
+  width: inherit;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 7px 0px 0px hsla(355, 95%, 23%, 0.321);
+}
+
+.form-bg {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2.5rem;
+  width: inherit;
+  box-shadow: 0px 7px 0px 0px hsla(355, 95%, 23%, 0.321);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  gap: 1rem;
+}
+
+input {
+  padding: 0.8rem;
+  font-weight: 600;
+  padding-left: 1.5rem;
+  border: 0.001px hsl(154, 59%, 51%) solid;
+  border-radius: 5px;
+}
+
+.svg {
+  position: relative;
+  align-self: flex-end;
+  width: 40px;
+  padding: 0;
+  margin-bottom: -40px;
+  transform: translateY(-70px);
+}
+
+button {
+  font-size: 16px;
+  margin-top: rem;
+  width: inherit;
+  padding: 1rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: white;
+  border: hsl(154, 59%, 51%);
+  background-color: hsl(154, 59%, 51%);
+  cursor: pointer;
+  box-shadow: 0px 04px 0px 0px hsla(154, 86%, 19%, 0.598);
+}
+
+.form-bg p {
+  text-align: center;
+  font-size: 12px;
+  color: hsl(246, 25%, 77%);
+}
+.form-bg p strong {
+  color: hsl(0, 100%, 74%);
+}
+
+.error {
+  font-size: 8px;
+  text-align: right;
+  margin-top: -15px;
+  color: hsl(0, 100%, 74%);
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+.attribution {
+  color: white;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.attribution a {
+  transition: 0.5s;
+}
+
+.attribution a:hover {
+  border: purple;
+  border-radius: 2px;
+  color: peru;
+}
+
+@media (max-width: 1024px) {
+  .app {
+    height: 90dvh;
+    width: 33rem;
+    display: grid;
+    place-items: center;
+  }
+
+  .app-details {
+    flex-direction: column;
+  }
+
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    background-image: url(../images/bg-intro-mobile.png);
+    background-size: cover;
+    width: 72dvw;
+  }
+
+  .app {
+    height: 85vh;
+    width: 15rem;
+    display: grid;
+    place-items: center;
+  }
+
+  .text {
+    transform: translateX(20px);
+    text-align: center;
+  }
+
+  .text p {
+    font-size: 15px;
+  }
+
+  .text h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  .form {
+    width: 300px;
+  }
+
+  .form-text {
+    padding: 2rem 1.5rem;
+    font-size: 14px;
+  }
+
+  .form-bg {
+    padding: 1.5rem;
+  }
+
+  .attribution {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    height: 100dvh;
+    width: 55dvw;
+  }
+
+  .app {
+    height: 85vh;
+    width: 12rem;
+    display: grid;
+    place-items: center;
+  }
+}
